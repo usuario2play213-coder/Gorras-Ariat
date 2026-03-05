@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gorras Ariat - Catálogo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .producto {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .producto:hover {
+            transform: scale(1.05);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .precio {
+            color: #27ae60;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #e67e22;
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d35400;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Catálogo de Gorras Ariat</h1>
+    <p>Estilo, calidad y tradición</p>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Productos</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<div class="container">
+    <div class="productos">
+
+        <div class="producto">
+            <img src="https://via.placeholder.com/300x200" alt="Gorra Ariat 1">
+            <h3>Ariat Logo Classic Negra</h3>
+            <p class="precio">$799 MXN</p>
+            <p>Gorra clásica con logo bordado al frente.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://via.placeholder.com/300x200" alt="Gorra Ariat 2">
+            <h3>Ariat Trucker Gris</h3>
+            <p class="precio">$849 MXN</p>
+            <p>Modelo trucker con malla trasera y ajuste snapback.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://via.placeholder.com/300x200" alt="Gorra Ariat 3">
+            <h3>Ariat Western Brown</h3>
+            <p class="precio">$899 MXN</p>
+            <p>Diseño western en color café con parche frontal.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://via.placeholder.com/300x200" alt="Gorra Ariat 4">
+            <h3>Ariat Mesh Azul Marino</h3>
+            <p class="precio">$820 MXN</p>
+            <p>Gorra cómoda con ventilación trasera.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://via.placeholder.com/300x200" alt="Gorra Ariat 5">
+            <h3>Ariat USA Flag Edition</h3>
+            <p class="precio">$950 MXN</p>
+            <p>Edición especial con bandera bordada.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://via.placeholder.com/300x200" alt="Gorra Ariat 6">
+            <h3>Ariat Camouflage Pro</h3>
+            <p class="precio">$880 MXN</p>
+            <p>Diseño camuflaje para un look rudo.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://via.placeholder.com/300x200" alt="Gorra Ariat 7">
+            <h3>Ariat Black & Gold</h3>
+            <p class="precio">$920 MXN</p>
+            <p>Elegante combinación negro con dorado.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://via.placeholder.com/300x200" alt="Gorra Ariat 8">
+            <h3>Ariat Performance Roja</h3>
+            <p class="precio">$870 MXN</p>
+            <p>Material ligero y transpirable.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://via.placeholder.com/300x200" alt="Gorra Ariat 9">
+            <h3>Ariat Rodeo Edition</h3>
+            <p class="precio">$990 MXN</p>
+            <p>Inspirada en el estilo rodeo profesional.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://via.placeholder.com/300x200" alt="Gorra Ariat 10">
+            <h3>Ariat Limited Silver</h3>
+            <p class="precio">$1,050 MXN</p>
+            <p>Edición limitada con detalles premium.</p>
+            <button>Comprar</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Catálogo de Gorras Ariat | Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
