@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gorras Ariat - Tienda Oficial</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#c9a227;
+}
+
+.hero{
+    background:url('https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+    height:60vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:48px;
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+}
+
+.section{
+    padding:60px 10%;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#c9a227;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+button{
+    background:#111;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#c9a227;
+}
+
+.about{
+    background:#111;
+    color:white;
+    text-align:center;
+}
+
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    .hero h2{
+        font-size:28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Gorras Ariat</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#sobre">Sobre Ariat</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h2>Estilo, Calidad y Tradición</h2>
+</section>
+
+<section class="section" id="productos">
+    <h2>Nuestras Gorras</h2>
+    <div class="products">
+        
+        <div class="card">
+            <img src="https://cdn.shopify.com/s/files/1/0261/9170/0185/products/A300015401_1000x.jpg" alt="Gorra Ariat Negra">
+            <div class="card-content">
+                <h3>Gorra Ariat Negra</h3>
+                <p class="price">$799 MXN</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.shopify.com/s/files/1/0261/9170/0185/products/A300014401_1000x.jpg" alt="Gorra Ariat Blanca">
+            <div class="card-content">
+                <h3>Gorra Ariat Blanca</h3>
+                <p class="price">$749 MXN</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.shopify.com/s/files/1/0261/9170/0185/products/A300013201_1000x.jpg" alt="Gorra Ariat Gris">
+            <div class="card-content">
+                <h3>Gorra Ariat Gris</h3>
+                <p class="price">$829 MXN</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section about" id="sobre">
+    <h2>Sobre Ariat</h2>
+    <p>
+        Ariat es una marca reconocida mundialmente por su calidad, diseño innovador 
+        y tradición en el estilo western. Sus gorras combinan comodidad, resistencia 
+        y un diseño auténtico para cualquier ocasión.
+    </p>
+</section>
+
+<section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <p style="text-align:center;">
+        Email: ventas@gorrasariat.com <br>
+        Teléfono: +52 123 456 7890
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Gorras Ariat - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
